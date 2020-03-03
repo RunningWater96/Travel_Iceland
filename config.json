@@ -1,0 +1,14 @@
+{
+  "menu": [
+    [
+      "Home",
+      "/home"
+    ],
+    [
+      "Travel",
+      "/travel"
+    ],
+    "Entertainment",
+    "/entertainment"
+    ]
+}
