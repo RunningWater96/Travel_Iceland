@@ -1,0 +1,20 @@
+{
+  "menu": [
+    [
+      "Travel",
+      "/travel"
+    ],
+    [
+    "Entertainment",
+    "/entertainment"
+    ],
+    [
+    "Business",
+      "/business"
+    ],
+    [
+      "Interesting Things",
+      "/interesting"
+    ]
+    ]
+}

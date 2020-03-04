@@ -1,0 +1,24 @@
+head
+  link(href='style.css', rel='stylesheet')
+  header
+    .nav
+      .container2
+        ul.main-menu
+          li
+            a(href="/") Home
+          li
+            a(href=config.menu[1][1]) #{config.menu[1][0]}
+          li
+            a(href=config.menu[0][1]) #{config.menu[0][0]}
+          li
+            a(href=config.menu[2][1]) #{config.menu[2][0]}
+          li
+            a(href=config.menu[3][1]) #{config.menu[3][0]}
+body
+  block contentdoctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
