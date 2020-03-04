@@ -13,7 +13,7 @@ function getRandomFact() {
             url = "https://apis.is/cyclecounter";
             break;
     }
-    
+
     loadData();
 }
 
@@ -23,6 +23,8 @@ function changeFactText() {
         case 1:
             factTextElement.innerHTML = "Iceland has counted " + data.results[0].DayCount 
                                         + " bikes today, and " + data.results[0].YearCount + " this year.";
+            break;
+        case 2:
             break;
     }
 }

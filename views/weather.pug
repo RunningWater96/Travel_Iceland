@@ -3,5 +3,8 @@ extends layout
 block content
     h1= title
     p Welcome to #{title}
-    div(id='weather')
+    div(id='weatherForecastDiv')
+        p(id="forecast")
+
+        
     script(src="travel.js")

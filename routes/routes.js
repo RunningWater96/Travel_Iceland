@@ -34,3 +34,10 @@ exports.travel = async (req, res) => {
         "config": config
     });
 };
+
+exports.weather = async (req, res) => {
+    res.render('weather', {
+        title: 'Travel',
+        "config": config
+    })
+};
