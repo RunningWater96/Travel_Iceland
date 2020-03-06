@@ -3,3 +3,7 @@ extends layout
 block content
     h1= title
     p Welcome to #{title}
+    p(id="p")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script
+      include ..\public\entertainment.js
