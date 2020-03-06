@@ -19,14 +19,36 @@
     ],
 
     "entertainment": [
-
+      [
+        "Sports",
+        "/sports"
+      ],
+      [
+        "TV",
+        "/television"
+      ]
     ],
 
     "travel": [
-
+      [
+        "Weather",
+        "/weather"
+      ],
+      [
+        "Flights",
+        "/flights"
+      ]
     ],
 
     "business": [
+      [
+        "Companies",
+        "/companies"
+      ],
+      [
+        "Currency",
+        "currency"
+      ]
 
     ]
 }
