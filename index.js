@@ -17,5 +17,6 @@ app.get('/business', asyncRoute(routes.business));
 app.get('/entertainment', asyncRoute(routes.entertainment));
 app.get('/interesting', asyncRoute(routes.interesting));
 app.get('/travel', asyncRoute(routes.travel));
+app.get('/weather', asyncRoute(routes.weather));
 
 app.listen(3000);
