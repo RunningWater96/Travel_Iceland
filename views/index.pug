@@ -3,25 +3,30 @@ extends layout
 block content
   div.content
     div.sidebar
-        button.sidebarButton About Iceland
-        button.sidebarButton Entertainment
-          //- ul
-          //-   each item in config.entertainment
-          //-     li
-          //-       a(href=item[1]) #{item[0]}
-        button.sidebarButton Travel
-          //- ul
-          //-   each item in config.travel
-          //-     li
-          //-       a(href=item[1]) #{item[0]}
-        button.sidebarButton Business
-          //- ul
-          //-   each item in config.business
-          //-     li
-          //-       a(href=item[1]) #{item[0]}
+      a Travel Iceland
+      button.sidebarButton About Iceland
+      ul
+        each item in config.about
+          li
+            a(href=item[1]) #{item[0]}
+      button.sidebarButton Entertainment
+        //- ul
+        //-   each item in config.entertainment
+        //-     li
+        //-       a(href=item[1]) #{item[0]}
+      button.sidebarButton Travel
+        ul
+          each item in config.travel
+            li
+              a(href=item[1]) #{item[0]}
+      button.sidebarButton Business
+        //- ul
+        //-   each item in config.business
+        //-     li
+        //-       a(href=item[1]) #{item[0]}
     div.wrapper
       div.section.parallax.topImage
-        h1.title Travel Iceland
+        h1.title Welcome to Travel Iceland
       div.section.static
         h1 about the site?
       div.section.parallax.bottomImage

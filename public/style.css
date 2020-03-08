@@ -15,6 +15,10 @@ h1{
     flex-direction: 'row';
 }
 
+.image{
+    
+}
+
 .bottomImage::after{
     background-image: url('./images/iceland1.jpg');
     background-position: center;
@@ -37,6 +41,7 @@ h1{
   position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
@@ -52,8 +57,7 @@ h1{
 
 .sidebarButton{
     height: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 10px;
 }
 
 .static{

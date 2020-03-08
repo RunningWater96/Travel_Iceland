@@ -1,8 +1,42 @@
 extends layout
 
 block content
-    h1= title
-    p(id="factText")
-    button(onclick="getRandomFact()") New Random Fact
+  div.content
+    div.sidebar
+      a Travel Iceland
+      button.sidebarButton About Iceland
+      ul
+        each item in config.about
+          li
+            a(href=item[1]) #{item[0]}
+      button.sidebarButton Entertainment
+        //- ul
+        //-   each item in config.entertainment
+        //-     li
+        //-       a(href=item[1]) #{item[0]}
+      button.sidebarButton Travel
+        //- ul
+        //-   each item in config.travel
+        //-     li
+        //-       a(href=item[1]) #{item[0]}
+      button.sidebarButton Business
+        //- ul
+        //-   each item in config.business
+        //-     li
+        //-       a(href=item[1]) #{item[0]}
+    div.wrapper
+      div.section.parallax.topImage
+        h1.title=title
+      div.section.static
+        h1(id="factText")
+        button(onclick="getRandomFact()") New Random Fact
+      div.section.parallax.bottomImage
+        h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
 
     script(src="interestingScript.js")
+//- extends layout
+
+//- block content
+//-     h1= title
+//-     p(id="factText")
+//-     button(onclick="getRandomFact()") New Random Fact

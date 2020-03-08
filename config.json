@@ -23,10 +23,28 @@
     ],
 
     "travel": [
-
+      [
+        "Currency",
+        "/currency"
+      ],
+      [
+        "Flights",
+        "/flights"
+      ],
+      [
+        "Weather",
+        "/weather"
+      ]
     ],
 
     "business": [
 
+    ],
+
+    "about": [
+      [
+        "Interesting Facts",
+        "/interesting"
+      ]
     ]
 }
