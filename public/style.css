@@ -12,7 +12,7 @@ h1{
 
 .content{
     display: flex;
-    flex-direction: 'row';
+    flex-direction: row;
 }
 
 .image{
