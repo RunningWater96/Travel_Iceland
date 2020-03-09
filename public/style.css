@@ -19,17 +19,17 @@ h1{
 li{
     list-style: none;
     text-align: right;
-    padding: 15px 50px;
+    padding: 15px 30px;
 }
 
 ul{
-    background-color: lightslategray;
+    background-color: #1D384C;
     margin: 0px;
     display: none;
 }
 
 .bottomImage::after{
-    background-image: url('./images/iceland1.jpg');
+    background-image: url('./images/icelandAurora.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -40,17 +40,19 @@ ul{
 }
 
 .home{
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Philosopher';
     text-align: center;
     text-decoration: none;
     margin: 80px 20px;
+    color: #F0F5F9;
 }
 
 .pages{
     font-family: 'Open Sans';
     text-decoration: none;
     width: 100%;
+    color: #F0F5F9;
 }
 
 .parallax::after{
@@ -78,9 +80,10 @@ ul{
 .sidebar{
     display: flex;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: #486D89;
     width: 400px;
     height: 100vh;
+    overflow: auto;
 }
 
 .sidebarButton{
@@ -91,21 +94,22 @@ ul{
     background-color: transparent;
     text-decoration: none;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #1D384C;
     cursor: pointer;
-}
-
-.sidebarButton:hover{
-    color: white;
+    outline: none;
+    color: #EFF7F9;
 }
 
 .static{
-    background: white;
+    background: #EFF7F9;
     flex-direction: column;
+    font-family: 'Open Sans';
+    text-shadow: none;
+    color: #1D384C;
 }
 
 .title{
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Philosopher';
 }
 
@@ -119,6 +123,10 @@ ul{
     background-image: url('./images/iceland2.jpg');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .wrapper{
