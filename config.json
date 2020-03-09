@@ -31,10 +31,6 @@
 
     "travel": [
       [
-        "Currency",
-        "/currency"
-      ],
-      [
         "Flights",
         "/flights"
       ],
@@ -51,7 +47,7 @@
       ],
       [
         "Currency",
-        "currency"
+        "/currency"
       ]
 
     ],
