@@ -14,9 +14,12 @@ const asyncRoute = route => (req, res, next = console.error) =>
 
 app.get('/', asyncRoute(routes.entertainment));
 app.get('/business', asyncRoute(routes.business));
-app.get('/entertainment', asyncRoute(routes.entertainment));
 app.get('/interesting', asyncRoute(routes.interesting));
-app.get('/travel', asyncRoute(routes.travel));
+app.get('/sports', asyncRoute(routes.sports));
+app.get('/television', asyncRoute(routes.television));
+app.get('/flights', asyncRoute(routes.flights));
 app.get('/weather', asyncRoute(routes.weather));
+app.get('/companies', asyncRoute(routes.companies));
+app.get('/currency', asyncRoute(routes.currency));
 
 app.listen(3000);

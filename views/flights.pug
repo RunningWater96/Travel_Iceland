@@ -1,7 +1,11 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
-    div(id='flights')
+    div.section.parallax.indexImage
+      h1.title=title
+    div.section.static
+      h1
+    div.section.parallax.bottomImage
+      h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
+
     script(src="travel.js")

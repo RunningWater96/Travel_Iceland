@@ -1,13 +1,33 @@
 head
   link(href='style.css', rel='stylesheet')
   link(rel="icon" href="./images/icelandIcon.png")
+  link(href="https://fonts.googleapis.com/css?family=Open+Sans|Philosopher&display=swap" rel="stylesheet")
   header
     title Travel Iceland
 body
-  block contentdoctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/public/style.css')
-  body
-    block content
+  div.content
+    div.sidebar
+      a(href="/").home Travel Iceland
+      button(onClick="toggleAbout()").sidebarButton About Iceland
+      ul(id="aboutList")
+        each item in config.about
+          li
+            a(href=item[1]).pages #{item[0]}
+      button(onClick="toggleEntertainment()").sidebarButton Entertainment
+      ul#entertainmentList
+        each item in config.entertainment
+          li
+            a(href=item[1]).pages #{item[0]}
+      button(onClick="toggleTravel()").sidebarButton Travel
+      ul#travelList
+        each item in config.travel
+          li
+            a(href=item[1]).pages #{item[0]}
+      button(onClick="toggleBusiness()").sidebarButton Business
+      ul#businessList
+        each item in config.business
+          li
+            a(href=item[1]).pages #{item[0]}
+      script(src="styling.js")
+    div.wrapper
+      block content
