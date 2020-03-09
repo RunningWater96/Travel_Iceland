@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname + '/public')));
 const asyncRoute = route => (req, res, next = console.error) =>
     Promise.resolve(route(req, res)).catch(next);
 
-app.get('/', asyncRoute(routes.entertainment));
+app.get('/', asyncRoute(routes.home));
 app.get('/business', asyncRoute(routes.business));
 app.get('/interesting', asyncRoute(routes.interesting));
 app.get('/sports', asyncRoute(routes.sports));

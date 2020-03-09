@@ -3,8 +3,46 @@ extends layout
 block content
     div.section.parallax.indexImage
       h1.title=title
-    div.section.static
-      h1
+    div.section.parallax.static
+          h1(style="color: Black;") Tv Shows
+            table
+              tr
+                th
+                th Title
+                th Duration
+                th Start Time
+              tr
+                th RUV Station
+                th(id="tva")
+                th(id="tva2")
+                th(id="tva3")
+              tr
+                th
+                th(id="tvb")
+                th(id="tvb2")
+                th(id="tvb3")
+              tr
+                th
+                th(id="tvc")
+                th(id="tvc2")
+                th(id="tvc3")
+              tr
+                th Ruvithrottir Station
+                th(id="tvd")
+                th(id="tvd2")
+                th(id="tvd3")
+              tr
+                th
+                th(id="tve")
+                th(id="tve2")
+                th(id="tve3")
+              tr
+                th
+                th(id="tvf")
+                th(id="tvf2")
+                th(id="tvf3")
     div.section.parallax.bottomImage
       h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
-    script(src="entertainment.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script
+      include ..\public\entertainment.js
