@@ -14,13 +14,6 @@ exports.business = async (req, res) => {
     });
 };
 
-exports.entertainment = async (req, res) => {
-    res.render('entertainment', {
-        title: 'Entertainment',
-        "config": config
-    });
-};
-
 exports.interesting = async (req, res) => {
     res.render('interesting', {
         title: 'Interesting Facts',

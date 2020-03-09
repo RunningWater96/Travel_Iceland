@@ -3,8 +3,81 @@ extends layout
 block content
     div.section.parallax.indexImage
       h1.title=title
-    div.section.static
-      h1
+    div.section.parallax.static
+          h1(style="color: Black;") Tv Shows
+            table(style="border: solid black;")
+              tr
+                th
+                th Title
+                th Duration
+                th Start Time
+              tr
+                th RUV Station
+                th(id="tva")
+                th(id="tva2")
+                th(id="tva3")
+              tr
+                th
+                th(id="tvb")
+                th(id="tvb2")
+                th(id="tvb3")
+              tr
+                th
+                th(id="tvc")
+                th(id="tvc2")
+                th(id="tvc3")
+              tr
+                th
+                th(id="tvd")
+                th(id="tvd2")
+                th(id="tvd3")
+              tr
+                th
+                th(id="tve")
+                th(id="tve2")
+                th(id="tve3")
+              tr
+                th
+                th(id="tvf")
+                th(id="tvf2")
+                th(id="tvf3")
+              tr
+                th
+                th(id="tvg")
+                th(id="tvg2")
+                th(id="tvg3")
+              tr
+                th
+                th(id="tvh")
+                th(id="tvh2")
+                th(id="tvh3")
+              tr
+                th
+                th(id="tvi")
+                th(id="tvi2")
+                th(id="tvi3")
+              tr
+                th
+                th ---------------------------
+                th ------------
+                th ---------------------
+              tr
+                th Ruvithrottir Station
+                th(id="tvj")
+                th(id="tvj2")
+                th(id="tvj3")
+              tr
+                th
+                th(id="tvk")
+                th(id="tvk2")
+                th(id="tvk3")
+              tr
+                th
+                th(id="tvl")
+                th(id="tvl2")
+                th(id="tvl3")
     div.section.parallax.bottomImage
       h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
-    script(src="entertainment.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script
+      include ..\public\television.js
