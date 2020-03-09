@@ -4,7 +4,10 @@ block content
     div.section.parallax.indexImage
       h1.title=title
     div.section.static
-      h1
+      input(id="searchBar" type="text" placeholder="Apple")
+      button(onclick="getCompanies()") Search
+      h1 Companies: 
+      ul(id="companyList")
     div.section.parallax.bottomImage
       h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
 
