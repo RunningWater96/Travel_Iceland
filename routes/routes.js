@@ -37,7 +37,7 @@ exports.travel = async (req, res) => {
 
 exports.weather = async (req, res) => {
     res.render('weather', {
-        title: 'Travel',
+        title: 'Weather',
         "config": config
     })
 };
