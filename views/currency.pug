@@ -4,7 +4,18 @@ block content
     div.section.parallax.indexImage
       h1.title=title
     div.section.static
-      h1
+      div(style="display: inline;color:Black")
+          table(style="display:inline;") USD
+            td 
+              tr(id="currencya") 
+              tr(id="currencya1") 
+              tr(id="currencya2")
+          table(style=";display:inline;") EUR
+            td 
+              tr(id="currencyb")
+              tr(id="currencyb1")
+              tr(id="currencyb2")
     div.section.parallax.bottomImage
       h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
     script(src="business.js")
