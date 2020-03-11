@@ -1,13 +1,14 @@
 extends layout
 
 block content
-    div.section.parallax.indexImage
+    div.section.parallax.companiesImage
       h1.title=title
     div.section.static
-      input(id="searchBar" type="text" placeholder="Apple")
-      button(onclick="getCompanies()") Search
-      h1 Companies: 
-      ul(id="companyList")
+      h1.sectionHead Companies 
+      input(id="searchBar" type="text" placeholder="Apple").input
+      button(onclick="getCompanies()").contentButton Search
+      div.companyDiv
+        ul(id="companyList").companyList
     div.section.parallax.bottomImage
       h1 by Andrew, Brooke, Kevin, Thomas, and Zoe
     script

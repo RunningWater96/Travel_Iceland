@@ -1,4 +1,3 @@
-
 html,
 body {
     padding: 0;
@@ -16,6 +15,11 @@ h1{
     cursor: default;
 }
 
+h3{
+    font-size: 24px;
+    font-family: 'Philosopher';
+}
+
 li{
     list-style: none;
     text-align: right;
@@ -28,22 +32,57 @@ ul{
     display: none;
 }
 
-#companyList {
-    display: block;
-    background-color: #F0F5F9;
-    color: black;
-    text-align: center;
+.buttonDiv{
+    display: flex;
+    flex-direction: column;
 }
 
-.bottomImage::after{
-    background-image: url('./images/icelandAurora.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+.companyDiv{
+    margin: 50px 0px;
+    border-top: 2px solid #1D384C;
+    border-bottom: 2px solid #1D384C;
+    width: 500px;
+    flex: 1;
+    overflow: auto;
+    text-align: right;
+}
+
+.companyList{
+    display: inline;
+    flex-direction: column;
+    background: transparent;
 }
 
 .content{
     display: flex;
     flex-direction: row;
+}
+
+.contentButton{
+    cursor: pointer;
+    background: #486D89;
+    color: #f0f5f9;
+    border: none;
+    height: 50px;
+    font-size: 24px;
+    font-family: 'Philosopher';
+    width: 250px;
+    border-bottom: 2px solid #1D384C;
+    outline: none;
+}
+
+.currencyTable{
+    font-size: 24px;
+    margin: 50px;
+}
+
+.currencyTD{
+    font-size: 36px;
+    border-bottom: 2px solid #1D384C;
+}
+
+.forecastDiv{
+    margin: 20px;
 }
 
 .home{
@@ -53,6 +92,18 @@ ul{
     text-decoration: none;
     margin: 80px 20px;
     color: #F0F5F9;
+}
+
+.input{
+    font-family: 'Open Sans';
+    margin: 30px;
+    font-size: 24px;
+    width: 250px;
+    color: #1D384C;
+}
+
+.input:focus{
+    outline-color: #8BACC4;
 }
 
 .pages{
@@ -81,7 +132,12 @@ ul{
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 0 0 5px #000;
+    text-shadow: 0 0 10px #1D384C;
+}
+
+.sectionHead{
+    font-size: 42px;
+    margin-bottom: 20px;
 }
 
 .sidebar{
@@ -120,6 +176,12 @@ ul{
     font-family: 'Philosopher';
 }
 
+.bottomImage::after{
+    background-image: url('./images/icelandAurora.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .indexImage::after{
     background-image: url('./images/iceland3.jpg');
     background-position: center;
@@ -130,6 +192,48 @@ ul{
     background-image: url('./images/iceland2.jpg');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.companiesImage::after{
+    background-image: url('./images/icelandCompanies.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currencyImage::after{
+    background-image: url('./images/icelandCurrency.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flightsImage::after{
+    background-image: url('./images/icelandFlights.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sportsImage::after{
+    background-image: url('./images/icelandSports.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.televisionImage::after{
+    background-image: url('./images/icelandTV.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weatherImage::after{
+    background-image: url('./images/icelandStorm.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.weatherDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {

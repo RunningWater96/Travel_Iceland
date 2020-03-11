@@ -1,17 +1,17 @@
 extends layout
 
 block content
-    div.section.parallax.indexImage
+    div.section.parallax.currencyImage
       h1.title=title
     div.section.static
-      div(style="display: inline;color:Black")
-          table(style="display:inline;") USD
-            td 
+      div(style="display: flex; flex-direction: row")
+          table.currencyTable
+            td.currencyTD USD
               tr(id="currencya") 
               tr(id="currencya1") 
               tr(id="currencya2")
-          table(style=";display:inline;") EUR
-            td 
+          table.currencyTable
+            td.currencyTD EUR
               tr(id="currencyb")
               tr(id="currencyb1")
               tr(id="currencyb2")
