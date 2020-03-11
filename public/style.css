@@ -28,6 +28,13 @@ ul{
     display: none;
 }
 
+#companyList {
+    display: block;
+    background-color: #F0F5F9;
+    color: black;
+    text-align: center;
+}
+
 .bottomImage::after{
     background-image: url('./images/icelandAurora.jpg');
     background-position: center;
